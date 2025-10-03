@@ -1,7 +1,6 @@
 const tablaCripto = document.getElementById("tablaCripto");
 const btnActualizar = document.getElementById("btnActualizar");
 
-// Lista de criptomonedas a mostrar
 const cryptos = ["bitcoin", "ethereum", "dogecoin", "litecoin", "ripple"];
 
 async function obtenerPrecios() {
@@ -37,8 +36,5 @@ async function obtenerPrecios() {
   }
 }
 
-// Cargar precios al iniciar
 window.addEventListener("load", obtenerPrecios);
-
-// Actualizar al presionar el botón
 btnActualizar.addEventListener("click", obtenerPrecios);
